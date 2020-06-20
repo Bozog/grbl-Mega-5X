@@ -581,9 +581,9 @@
   #define SPINDLE_DIRECTION_BIT   7 // SDR
 
   // Define flood and mist coolant enable output pins.
-  #define COOLANT_FLOOD_DDR   DDRB
-  #define COOLANT_FLOOD_PORT  PORTB
-  #define COOLANT_FLOOD_BIT   4 // Not used (disabled in gcode.h)
+  #define COOLANT_FLOOD_DDR   DDRF
+  #define COOLANT_FLOOD_PORT  PORTF
+  #define COOLANT_FLOOD_BIT   3 // COO
   #define COOLANT_MIST_DDR    DDRF
   #define COOLANT_MIST_PORT   PORTF
   #define COOLANT_MIST_BIT    3 // COO

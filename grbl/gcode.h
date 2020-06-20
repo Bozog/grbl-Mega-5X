@@ -117,8 +117,7 @@
 
 // Modal Group M8: Coolant control
 #define COOLANT_DISABLE 0 // M9 (Default: Must be zero)
-//#define COOLANT_FLOOD_ENABLE  PL_COND_FLAG_COOLANT_FLOOD // M8 (NOTE: Uses planner condition bit flag)
-#define COOLANT_FLOOD_ENABLE  0
+#define COOLANT_FLOOD_ENABLE  PL_COND_FLAG_COOLANT_FLOOD // M8 (NOTE: Uses planner condition bit flag)
 #define COOLANT_MIST_ENABLE   PL_COND_FLAG_COOLANT_MIST  // M7 (NOTE: Uses planner condition bit flag)
 
 // Modal Group G8: Tool length offset

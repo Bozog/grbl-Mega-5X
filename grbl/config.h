@@ -43,6 +43,10 @@
 #define DEFAULTS_RAMPS_BOARD
 #define CPU_MAP_2560_RAMPS_BOARD
 
+// To use with bozogshield Board, comment out the above defines and uncomment the next two defines
+#define DEFAULTS_RAMPS_BOARD
+#define CPU_MAP_2560_BOZOG_BOARD
+
 // Serial baud rate
 // #define BAUD_RATE 230400
 #define BAUD_RATE 115200
@@ -50,7 +54,7 @@
 // Axis array index values. Must start with 0 and be continuous.
 #ifdef DEFAULTS_RAMPS_BOARD
   // 4, 5 & 6 axis support only for RAMPS 1.4 (for the moment :-)...)
-  #define N_AXIS 5            // Number of axes
+  #define N_AXIS 6            // Number of axes
   #define N_AXIS_LINEAR 3     // Number of linears axis
 #else
   #define N_AXIS 3 // Number of axes = 3 if not DEFAULTS_RAMPS_BOARD
@@ -255,7 +259,7 @@
 // immediately forces a feed hold and then safely de-energizes the machine. Resuming is blocked until
 // the safety door is re-engaged. When it is, Grbl will re-energize the machine and then resume on the
 // previous tool path, as if nothing happened.
-#define ENABLE_SAFETY_DOOR_INPUT_PIN // Default disabled. Uncomment to enable.
+//#define ENABLE_SAFETY_DOOR_INPUT_PIN // Default disabled. Uncomment to enable.
 
 // After the safety door switch has been toggled and restored, this setting sets the power-up delay
 // between restoring the spindle and coolant and resuming the cycle.
